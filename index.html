@@ -6,283 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/lightslider.css">
-
-    <title>Document</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Meta-Fashion</title>
   </head>
 
   <body>
-      <section class="slider">
-    <ul id="autoWidth" class="cs-hidden">
-        <!--ITEM-1-->
-      <li class="item-a">
-        <!--BOX-SLIDER-------------------->
-        <div class="box">
-          <!--IMAGE-ON-THE-BOX-->
-          <div class="slide-img">
-            <model-viewer
-              src="3dmodel/dress4.glb"
-              ar
-              ar-modes="webxr scene-viewer quick-look"
-              ar-scale="auto"
-              alt="A 3D model of an astronaut"
-              auto-rotate
-              camera-controls
-            ></model-viewer>
-            <!--OVERLAY-------->
-              <div class="overlay">
-                <!--BUY-BUTTON------>
-                <a href="#" class="buy-btn">More Detials</a>
-              </div>
-          </div>
-          <!--DETAILS-SECTION-OF-THE-BOX--------------->
-          <div class="detail-box">
-            <!-----TYPE-OF-PRODUCT--------->
-            <div class="type">
-              <a href="#">Fitted Dress</a>
-              <span>New Arrivals</span>
-            </div>
-            <a href="#" class="price">$23</a>
+    <header class="header">
+      <!--NAVBAR-SECTION-------------------------------------------------------------------------->
+      <nav class="navbar navbar-expand-lg nav-bar navbar-dark">
+        <div class="container-fluid">
+          <div class="logo-container"><h1 class="logo">Meta-Fashion</h1></div>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav d-flex justify-content-evenly w-100">
+              <li class="menu__item"><a href="" class="item__link">Home</a></li>
+              <li class="menu__item"><a href="" class="item__link">Product</a></li>
+              <li class="menu__item"><a href="" class="item__link">About</a></li>
+            </ul>
           </div>
         </div>
-      </li>
-      <!--ITEM-2-->
-      <li class="item-b">
-        <!--BOX-SLIDER-------------------->
-        <div class="box">
-          <!--IMAGE-ON-THE-BOX-->
-          <div class="slide-img">
-            <model-viewer
-              src="3dmodel/dress4.glb"
-              ar
-              ar-modes="webxr scene-viewer quick-look"
-              ar-scale="auto"
-              alt="A 3D model of an astronaut"
-              auto-rotate
-              camera-controls
-            ></model-viewer>
-            <!--OVERLAY-------->
-            <div class="overlay">
-              <!--BUY-BUTTON------>
-              <a href="#" class="buy-btn">More Detials</a>
+      </nav>
+    </header>
+    <main class="main">
+      <!--HERO_SECTION------------------------------------------------------------------------------------------------------>
+      <div class="hero-container position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+          <h1 class="display-4 fw-normal">Fashion Anywere</h1>
+          <p class="lead fw-normal">bringing the fashion meta-verse to you. preview the latest in fashion from stores all over the globe from the comfort of your home! .</p>
+          <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+        </div>
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+      </div>
+      <!-- SLIDER SECTION --------------------------------------------------------------------------------------------->
+      <section class="slider mb-5 ">
+        <h3 class="popular-text text-center">Featured collections</h3>
+        <div class="preview-container d-flex justify-content-center">
+          <ul id="autoWidth" class=" card-container row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+          </ul>
+        </div>
+        <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+          <div class="bg-dark w-100 me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+            <div class="my-3 py-3">
+              <h2 class="display-5">AR Showroom</h2>
+              <p class="lead">Preview Shoes and Dress collections in 3d and AR.</p>
             </div>
+            <div class="bg-light shadow-sm mx-auto d-flex justify-content-center align-items-center" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; color:black;"><h3 class="locked">Coming Soon!</h3></div>
           </div>
-          <!--DETAILS-SECTION-OF-THE-BOX--------------->
-          <div class="detail-box">
-            <!-----TYPE-OF-PRODUCT--------->
-            <div class="type">
-              <a href="#">Fitted Dress</a>
-              <span>New Arrivals</span>
+          <div class="bg-light w-100 me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+              <h2 class="display-5">VR Showroom</h2>
+              <p class="lead">Enter the virtual world of fashion! view Collection VR .</p>
             </div>
-            <a href="#" class="price">$23</a>
+            <div class="bg-dark shadow-sm mx-auto d-flex justify-content-center align-items-center" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; color:white;"> <h3 class="locked">Coming Soon!</h3> </div>
           </div>
         </div>
-      </li>
-      <!--ITEM-3-->
-      <li class="item-c">
-        <!--BOX-SLIDER-------------------->
-        <div class="box">
-          <!--IMAGE-ON-THE-BOX-->
-          <div class="slide-img">
-            <model-viewer
-              src="3dmodel/dress4.glb"
-              ar
-              ar-modes="webxr scene-viewer quick-look"
-              ar-scale="auto"
-              alt="A 3D model of an astronaut"
-              auto-rotate
-              camera-controls
-            ></model-viewer>
-            <!--OVERLAY-------->
-            <div class="overlay">
-              <!--BUY-BUTTON------>
-              <a href="#" class="buy-btn">More Detials</a>
+      
+      </section>
+      <section class="newsletter ">
+        <div class="w-100 d-flex justify-content-center">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of whats new and exciting from us.</p>
+            <div class="d-flex w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn btn-primary" type="button">Subscribe</button>
             </div>
-          </div>
-          <!--DETAILS-SECTION-OF-THE-BOX--------------->
-          <div class="detail-box">
-            <!-----TYPE-OF-PRODUCT--------->
-            <div class="type">
-              <a href="#">Fitted Dress</a>
-              <span>New Arrivals</span>
-            </div>
-            <a href="#" class="price">$23</a>
-          </div>
+          </form>
         </div>
-      </li>
-      <!--ITEM-4-->
-      <li class="item-d">
-        <!--BOX-SLIDER-------------------->
-        <div class="box">
-          <!--IMAGE-ON-THE-BOX-->
-          <div class="slide-img">
-            <model-viewer
-              src="3dmodel/dress4.glb"
-              ar
-              ar-modes="webxr scene-viewer quick-look"
-              ar-scale="auto"
-              alt="A 3D model of an astronaut"
-              auto-rotate
-              camera-controls
-            ></model-viewer>
-            <!--OVERLAY-------->
-            <div class="overlay">
-              <!--BUY-BUTTON------>
-              <a href="#" class="buy-btn">More Detials</a>
-            </div>
-          </div>
-          <!--DETAILS-SECTION-OF-THE-BOX--------------->
-          <div class="detail-box">
-            <!-----TYPE-OF-PRODUCT--------->
-            <div class="type">
-              <a href="#">Fitted Dress</a>
-              <span>New Arrivals</span>
-            </div>
-            <a href="#" class="price">$23</a>
-          </div>
-        </div>
-      </li>
-      <!--ITEM-5-->
-      <li class="item-e">
-        <!--BOX-SLIDER-------------------->
-        <div class="box">
-          <!--IMAGE-ON-THE-BOX-->
-          <div class="slide-img">
-            <model-viewer
-              src="3dmodel/dress4.glb"
-              ar
-              ar-modes="webxr scene-viewer quick-look"
-              ar-scale="auto"
-              alt="A 3D model of an astronaut"
-              auto-rotate
-              camera-controls
-            ></model-viewer>
-            <!--OVERLAY-------->
-            <div class="overlay">
-              <!--BUY-BUTTON------>
-              <a href="#" class="buy-btn">More Detials</a>
-            </div>
-          </div>
-          <!--DETAILS-SECTION-OF-THE-BOX--------------->
-          <div class="detail-box">
-            <!-----TYPE-OF-PRODUCT--------->
-            <div class="type">
-              <a href="#">Fitted Dress</a>
-              <span>New Arrivals</span>
-            </div>
-            <a href="#" class="price">$23</a>
-          </div>
-        </div>
-      </li>
-      <!--ITEM-6-->
-      <li class="item-f">
-        <!--BOX-SLIDER-------------------->
-        <div class="box">
-          <!--IMAGE-ON-THE-BOX-->
-          <div class="slide-img">
-            <model-viewer
-              src="3dmodel/dress4.glb"
-              ar
-              ar-modes="webxr scene-viewer quick-look"
-              ar-scale="auto"
-              alt="A 3D model of an astronaut"
-              auto-rotate
-              camera-controls
-            ></model-viewer>
-            <!--OVERLAY-------->
-            <div class="overlay">
-              <!--BUY-BUTTON------>
-              <a href="#" class="buy-btn">More Detials</a>
-            </div>
-          </div>
-          <!--DETAILS-SECTION-OF-THE-BOX--------------->
-          <div class="detail-box">
-            <!-----TYPE-OF-PRODUCT--------->
-            <div class="type">
-              <a href="#">Fitted Dress</a>
-              <span>New Arrivals</span>
-            </div>
-            <a href="#" class="price">$23</a>
-          </div>
-        </div>
-      </li>
-      <!--ITEM-7-->
-      <li class="item-g">
-        <!--BOX-SLIDER-------------------->
-        <div class="box">
-          <!--IMAGE-ON-THE-BOX-->
-          <div class="slide-img">
-            <model-viewer
-              src="3dmodel/dress4.glb"
-              ar
-              ar-modes="webxr scene-viewer quick-look"
-              ar-scale="auto"
-              alt="A 3D model of an astronaut"
-              auto-rotate
-              camera-controls
-            ></model-viewer>
-            <!--OVERLAY-------->
-            <div class="overlay">
-              <!--BUY-BUTTON------>
-              <a href="#" class="buy-btn">More Detials</a>
-            </div>
-          </div>
-          <!--DETAILS-SECTION-OF-THE-BOX--------------->
-          <div class="detail-box">
-            <!-----TYPE-OF-PRODUCT--------->
-            <div class="type">
-              <a href="#">Fitted Dress</a>
-              <span>New Arrivals</span>
-            </div>
-            <a href="#" class="price">$23</a>
-          </div>
-        </div>
-      </li>
-      <!--ITEM-8-->
-      <li class="item-h">
-        <!--BOX-SLIDER-------------------->
-        <div class="box">
-          <!--IMAGE-ON-THE-BOX-->
-          <div class="slide-img">
-            <model-viewer
-              src="3dmodel/dress4.glb"
-              ar
-              ar-modes="webxr scene-viewer quick-look"
-              ar-scale="auto"
-              alt="A 3D model of an astronaut"
-              auto-rotate
-              camera-controls
-            ></model-viewer>
-            <!--OVERLAY-------->
-            <div class="overlay">
-              <!--BUY-BUTTON------>
-              <a href="#" class="buy-btn">More Detials</a>
-            </div>
-          </div>
-          <!--DETAILS-SECTION-OF-THE-BOX--------------->
-          <div class="detail-box">
-            <!-----TYPE-OF-PRODUCT--------->
-            <div class="type">
-              <a href="#">Fitted Dress</a>
-              <span>New Arrivals</span>
-            </div>
-            <a href="#" class="price">$23</a>
-          </div>
-        </div>
-      </li>
-    </ul>
-        </section>
+      </section>
+    </main>
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+          </ul>
+          <p class="text-center text-muted">&copy; 2021 Company, Inc</p>
+        </footer>
+      
 
     <!-- Use it like any other HTML element -->
 
     <!----JS SCRIPTS-->
-    <script 
+    <!-- <script 
     type="text/javascript" 
     src="js/Jquery.js"
     ></script>
     <script
     type="text/javascript"
     src="js/lightslider.js"
-    ></script>
+    ></script> -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script type="text/javascript"
     src="js/script.js"
     ></script>
